@@ -12,9 +12,16 @@ describe('Account', () => {
   });
 
   test('Should show a balance of 100 after 100 has been deposited', () => {
-    account.add(100);
+    account.add(1000);
 
-    expect(account.balance).toEqual(100)
+    expect(account.balance).toEqual(1000)
+  });
+
+  test('Should allow for withdrawals', () => {
+    account.add(1000);
+    account.withdrawal(500);
+    
+    expect(account.balance).toEqual(500)
   });
   
 })
