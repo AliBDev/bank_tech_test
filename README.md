@@ -18,8 +18,25 @@
 **Then** she would see
 
 ```
-date || credit || debit || balance
-14/01/2023 || || 500.00 || 2500.00
-13/01/2023 || 2000.00 || || 3000.00
-10/01/2023 || 1000.00 || || 1000.00
+date       || credit  ||  debit   || balance
+14/01/2023 ||         ||  500.00  || 2500.00
+13/01/2023 || 2000.00 ||          || 3000.00
+10/01/2023 || 1000.00 ||          || 1000.00
 ```
+
+
+## Using this program ##
+
+# Initialise the NPM project (this will create a file package.json)
+$ npm init -y
+
+# Add the jest package to our project
+# (this will update package.json and package-lock.json)
+$ npm add jest
+
+# Also install jest "globally"
+# (this is so we can run the `jest` command)
+$ npm install -g jest
+
+# Run our tests
+$ jest
