@@ -6,7 +6,11 @@ const statement = new Statement(account);
 
 
 describe('Statement', () => {
-  it('displays the headers of a statement', () => {
-    expect(statement.getHeader()).toEqual("Date || Credit || Debit || Balance")
+  it('returns the headers of a statement', () => {
+    expect(statement.getHeader()).toEqual("Date || Credit || Debit || Balance");
+  })
+
+  it('returns a statement with no transactions', () => {
+    expect(statement.getStatement()).toEqual([]);
   })
 });
