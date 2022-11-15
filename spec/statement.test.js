@@ -22,7 +22,7 @@ describe('Statement', () => {
     expect(statementDetails[0].includes("1500.00")).toBe(true);
   });
 
-  it("Adds a deposit and balance is updated", () => {
+  it("Adds a deposit to the statement & balance is credited with the correct amount", () => {
     const account = new Account();
     account.deposit(2000);
     const statement = new Statement(account);
@@ -32,5 +32,19 @@ describe('Statement', () => {
 
     const statementDetails = statement.getStatement();
     expect(statementDetails[0]).toEqual("15/11/2022 || 2000.00 || || 2000.00")
+  });
+
+  it("Adds a withdrawal to the statement & the balance is debited", () => {
+    const account = new Account();
+    account.deposit(1000);
+    account.withdrawal(500);
+    const statement = new Statement(account);
+
+    const withdrawal = { amount: 500, type: "withdrawal" };
+    statement.add(withdrawal);
+
+    const statementDetails = statement.getStatement();
+
+    expect(statementDetails[0]).toEqual("15/11/2022 || || 500.00 || 500.00")
   });
 });
