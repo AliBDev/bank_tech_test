@@ -27,4 +27,5 @@ describe('Columns Formatter', () => {
     
     expect(formatter.statementColumns(transaction)).toEqual(" || 400.00 ");
   });
+  
 })
