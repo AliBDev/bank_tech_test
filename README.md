@@ -1,6 +1,6 @@
 # Banking App
 
-# App Description
+## App Description
 
 This app has been designed as a basic way of tracking deposits & withdrawals from an account.
 
@@ -8,50 +8,51 @@ This app has been designed as a basic way of tracking deposits & withdrawals fro
 
 First, start with installing Node:
 
-$ nvm install node
-$ nvm use node
+```$ nvm install node```
+```$ nvm use node```
 
-# Initialise the NPM project (this will create a file package.json)
+Initialise the NPM project (this will create a file package.json)
 
-$ npm init -y
+```$ npm init -y```
 
-# Add the jest package to our project
+Add the jest package to our project
 
-$ npm add jest
+```$ npm add jest```
 
-# Also install jest globally (this is so we can run the `jest` command)
+Also install jest globally (this is so we can run the `jest` command)
 
-$ npm install -g jest
+```$ npm install -g jest```
 
 # Run our tests
 
-$ jest
+```$ jest```
 
-# Running the app/code itself
+## Running the app/code itself
 
-# Run node
+## Run node
 
-$ node
+```$ node```
 
-# Create a new bankApp instance:
 
-const BankingApp = require("./bankingApp")
-const bankApp = new BankingApp()
+Create a new bankApp instance:
 
-# Make a deposit
+```const BankingApp = require("./bankingApp")```
+```const bankApp = new BankingApp()```
 
-bankApp.deposit(1000)
-bankApp.deposit(2000)
+Make a deposit
 
-# Make a withdrawal
+```bankApp.deposit(1000)```
+```bankApp.deposit(2000)```
 
-bankApp.withdrawal(500)
+Make a withdrawal
 
-# Print the statement
+```bankApp.withdrawal(500)```
 
-bankApp.printStatement()
+Print the statement
 
-Final Reflections
+```bankApp.printStatement()```
+
+## Final Reflections
 
 I have struggled to correctly test for a full output to the console.
 
