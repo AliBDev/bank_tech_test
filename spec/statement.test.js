@@ -4,6 +4,7 @@ const Account = require('../lib/account.js')
 const account = new Account();
 const statement = new Statement(account);
 
+jest.useFakeTimers().setSystemTime(new Date("2022-11-15"));
 
 describe('Statement', () => {
   it('returns the headers of a statement', () => {

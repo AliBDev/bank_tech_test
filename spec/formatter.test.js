@@ -1,6 +1,8 @@
 const Formatter = require('../lib/formatter.js');
 const formatter = new Formatter();
 
+jest.useFakeTimers().setSystemTime(new Date("2022-11-15"));
+
 describe('Date Formatter', () => {
   it("Returns today's date", () => {
     expect(formatter.todaysDate()).toEqual("15/11/2022");
