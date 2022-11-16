@@ -48,4 +48,5 @@ describe('Statement', () => {
 
     expect(statementDetails[0]).toEqual("15/11/2022 || || 500.00 || 500.00")
   });
+  
 });
