@@ -21,5 +21,4 @@ describe("getStatement()", () => {
     let expectedTransactionRow = "15/11/2022 || || 300.00 || 700.00";
     expect(statement.includes(expectedTransactionRow)).toBe(true);
   });
-
 });
