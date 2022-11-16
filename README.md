@@ -23,13 +23,13 @@ Also install jest globally (this is so we can run the `jest` command)
 
 ```$ npm install -g jest```
 
-# Run our tests
+# Testing
 
 ```$ jest```
 
 ## Running the app/code itself
 
-## Run node
+Run node:
 
 ```$ node```
 
